@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v16 2019-07-24
+index.html
+./js/jquery-3.2.1.min.js
+./js/main.js
+./css/main.min.css
+./img/logo.png
+./img/header.png
+./img/checkmark.png
+./img/lines.png
+./img/favicon-16x16.png
+./img/favicon-32x32.png
+./sound/ding.mp3
+./sound/dong.mp3
+manifest.json

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- <html lang="fr" manifest="cache.appcache"> -->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Inspiration Zen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#dde6c6">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#dde6c6">
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="burger">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+    <div class="menu">
+        <ul class="nav">
+            <li data-link="breath"><div class="button"><p>Respiration rythmée</p></div></li>
+            <li data-link="why">Pourquoi respirer ?</li>
+            <li data-link="how">Comment faire ?</li>
+            <li data-link="what">Quel protocole choisir ?</li>
+            <li data-link="offer">L'offre</li>
+            <li data-link="who">Contact</li>
+        </ul>
+    </div>
+    <div class="header"></div>
+    <div class="logo"></div>
+    <section id="breath" class="visible">
+        <div class="ctrl">
+            <div class="option">
+                <p class="label">Durée en minutes</p>
+                <div class="select" data-option="duration">
+                    <div data-value="1" class="selected">1</div>
+                    <div data-value="2">2</div>
+                    <div data-value="3">3</div>
+                    <div data-value="4">4</div>
+                    <div data-value="5">5</div>
+                </div>
+            </div>
+            <div class="option">
+                <p class="label">Respirations par minute</p>
+                <div class="select" data-option="breaths">
+                    <div data-value="4" class="selected">4</div>
+                    <div data-value="5">5</div>
+                    <div data-value="6">6</div>
+                    <div data-value="7">7</div>
+                    <div data-value="8">8</div>
+                </div>
+            </div>
+            <div class="option">
+                <p class="label">Animation</p>
+                <div class="select" data-option="animation">
+                    <div class="selected" data-value="grow">Éclosion</div>
+                    <div data-value="rotate">Rotation</div>
+                    <div data-value="line">Ascension</div>
+                </div>
+            </div>
+            <div class="option">
+                <p class="label">Sons</p>
+                <div class="select" data-option="sounds">
+                    <div class="selected" data-value="all">Tous</div>
+                    <div data-value="end">Gong final</div>
+                    <div data-value="none">Sans</div>
+                </div>
+            </div>
+            <div class="button start">
+                <p>Commencer</p>
+            </div>
+        </div>
+        <div class="text"></div>
+        <div class="overlay">
+            <div class="modal">
+                <p>Souhaitez-vous arrêter l’exercice ?</p>
+                <div class="button reset"><p>Arrêter</p></div>
+                <div class="button button-secondary resume"><p>Continuer</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="why">
+        <div class="head">
+            <h1>Pourquoi respirer ?</h1>
+        </div>
+        <div class="content">
+            <ul>
+                <li><strong>Mieux-être</strong> et sérénité</li>
+                <li><strong>Confiance en soi</strong></li>
+                <li><strong>Concentration</strong>, lucidité, efficacité</li>
+                <li><strong>Meilleurs contacts</strong> et relations</li>
+                <li>Des enfants plus <strong>paisibles</strong></li>
+                <li>Perte de la <strong>surcharge abdominale</strong></li>
+                <li>Une peau plus <strong>saine</strong> et lumineuse</li>
+                <li>Un cuir chevelu plus <strong>détendu</strong>, en santé</li>
+                <li>Des cheveux plus <strong>toniques</strong> et brillants</li>
+            </ul>
+        </div>
+    </section>
+    <section id="how">
+        <div class="head">
+            <h1>Comment faire ?</h1>
+        </div>
+        <div class="content">
+            <p><strong>Où ?</strong> N'importe où… si possible dans un endroit calme.</p>
+            <p><strong>Quand ?</strong> Quand vous voulez… de préférence quotidiennement, idéalement 3 fois par jour (avant un repas par exemple).</p>
+            <p><strong>Comment ?</strong> Assis·e, les pieds au sol, les mains sur les genoux, le dos droit, sans tension, avec des respirations amples qui emplissent les poumons, puis tout le ventre.</p>
+        </div>
+    </section>
+    <section id="what">
+        <div class="head">
+            <h1>Quel protocole choisir ?</h1>
+        </div>
+        <div class="content">
+            <p>
+                <strong>Coup / blessure</strong><br>
+                <span>→ 1 minute, 8 respirations par minute</span>
+            </p>
+            <!-- 1 minute à 8 -->
+            <div class="button button-secondary bullet-after" data-duration="1" data-breaths="8"><p>Essayer maintenant</p></div>
+
+            <p>
+                <strong>Ponctuel</strong> : gestion de la douleur (maux de tête, de dos, douleurs articulaires…)<br>
+                <span>→ 3 minutes, 6 respirations par minute</span>
+            </p>
+            <!-- 3 minutes à 6 -->
+            <div class="button button-secondary bullet-after" data-duration="3" data-breaths="6"><p>Essayer maintenant</p></div>
+
+            <p>
+                <strong>Court / urgence</strong> : gestion du stress (colère, panique, angoisse, trac…)<br>
+                <span>→ 1 à 3 minutes, 5 respirations par minute</span>
+            </p>
+            <!-- 1 minute à 5 -->
+            <div class="button button-secondary bullet-after" data-duration="1" data-breaths="5"><p>Essayer maintenant</p></div>
+
+            <p>
+                <strong>Dynamique</strong> : ré-équilibrer le métabolisme (mieux dormir, mieux manger, mieux digérer, être moins fatigué, moins inquiet…)<br>
+                <span>→ 5 minutes, 6 respirations par minute, 3 fois par jour</span>
+            </p>
+            <!-- 5 minutes à 6 -->
+            <div class="button button-secondary bullet-after" data-duration="5" data-breaths="6"><p>Essayer maintenant</p></div>
+
+            <p>
+                <strong>Relaxation</strong> : repos (détente musculaire et mentale, endormissement, sommeil réparateur, recharger les batteries…)<br>
+                <span>→ 5 à 15 minutes, 4 respirations par minute, 1 fois par jour</span>
+            </p>
+            <!-- 5 minutes à 4 -->
+            <div class="button button-secondary bullet-after" data-duration="5" data-breaths="4"><p>Essayer maintenant</p></div>
+        </div>
+    </section>
+    <section id="offer">
+        <div class="head">
+            <h1>L'offre</h1>
+        </div>
+        <div class="content">
+            <p class="center bullet-after">
+                <strong>D’Inspiration Zen</strong><br>
+                Propose des techniques intégratives au service du Bien-Être et du Vivre-Mieux.
+            </p>
+            <p class="bullet-after">
+                Le constat de départ est que nos modes de vie et leurs exigences opposent les différentes facettes de l’individu qui devient le théâtre de rivalités et d’affrontements entre des priorités antagonistes. Ces conflits intérieurs arbitrés par « urgences » et « devoirs » consomment du temps, de l’énergie et sèment la fatigue qui engendre un sentiment de lassitude et d’insatisfaction. Cette « fatigue » brouille les perspectives et ronge ainsi les performances et la productivité.
+            </p>
+            <p class="center bullet-after">
+                <strong>
+                    Bien-Être pour Vivre-Mieux n’est pas une finalité !<br>
+                    C’est un moyen dédié à l’envie de progresser via motivation et dynamisme.
+                </strong>
+            </p>
+            <p class="bullet-after">
+                L’enjeu est de réconcilier ces facettes de l’individu, avant qu’il ne soit en souffrance, remettre en cohérence image, santé, objectifs, ambition, développement personnel et professionnel… et surtout utiliser les unes aux services des autres dans une dynamique réciproque et vitale.
+            </p>
+            <p>
+                D’Inspiration Zen décline ses techniques intégratives dans les domaines :
+            </p>
+            <ul class="bullet-after">
+                <li>du management en entreprises, en institutions et services publics</li>
+                <li>de la formation de formateurs aux techniques pédagogiques holistiques</li>
+                <li>des apprentissages à destination du public final enfants et adultes</li>
+                <li>du coaching contexte professionnel/coaching contexte privé</li>
+                <li>de l’humain, son image, sa place dans le groupe, son expression, sa réalisation</li>
+            </ul>
+            <p>
+                D’Inspiration Zen exerce ses techniques intégratives par :
+            </p>
+            <ul>
+                <li>des formations théoriques (méthodes déductives et inductives)</li>
+                <li>le conseil en image, indissociable de la communication induite (coiffure, barbe/maquillage, accessoires, vêtements, posture et gestuelle)</li>
+                <li>l’accompagnement personnel selon un protocole de 12 à 15 semaines (conjugue les compétences du comportementaliste et du vitaliste)</li>
+                <li>Service de soins de confort tels ateliers respiration/relaxation ; coiffure/maquillage/soin des mains et des pieds ; massages/auto-massages et réflexologie de bien-être.</li>
+            </ul>
+            <p class="bullet-after">
+                <em>Selon les prestations, elles peuvent être réalisées sur site ou à distance via internet et/ou téléphone.</em>
+            </p>
+            <p class="center bullet-after">
+                <em>Faciliter les apprentissages / Améliorer ses relations au travail et à ses collègues / Améliorer la relation à son voisinage / Améliorer les relations dans le cercle familial / Dynamiser la recherche d’emploi / Atteindre les ambitions / Booster la fierté et la confiance…</em>
+            </p>
+            <p class="center">
+                <em>D'Inspiration Zen</em>
+            </p>
+        </div>
+    </section>
+    <section id="who">
+        <div class="head">
+            <h1>Contact</h1>
+        </div>
+        <div class="content">
+            <p><strong>D'inspiration Zen</strong></p>
+            <p>Conseil et formation</p>
+            <p><a href="tel:+33676773035">06 76 77 30 35‬</a></p>
+            <br>
+            <p><strong>D'inspiration Zen</strong></p>
+            <p>Beauté, bien-être</p>
+            <p><a href="tel:+33676773035">06 76 77 30 35‬</a></p>
+            <br>
+            <p>
+                SARL Y2Prisme<br>
+                38200 Vienne<br>
+                Siret : 47895084300027
+            </p>
+        </div>
+    </section>
+</body>
+</html>
